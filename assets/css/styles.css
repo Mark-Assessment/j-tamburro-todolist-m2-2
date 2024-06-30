@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: right; /* Centers the content horizontally */
     align-items: right; /* Centers the content vertically */
-    height: 50%; /* Makes the container full height of the viewport */
+    height: 70%; /* Makes the container full height of the viewport */
     margin: 100px;
 }
 
@@ -26,22 +26,52 @@ body {
 }
 
 .text {
-    text-align: center; /* Centers text inside the card */
+    text-align: left; /* Centers text inside the card */
 }
 
 .text h1 {
     margin-bottom: 20px;
+    text-align: center;
 }
 
-.todo-list {
-    list-style-type: none;
+#todo-form input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#todo-form button {
+    padding: 10px 20px;
+    background-color: #5F9EA0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#todo-form button:hover {
+    background-color: #0b5e60;
+}
+
+#todo-list {
+    list-style: none;
     padding: 0;
 }
 
-.todo-list li {
-    margin-bottom: 10px;
-    background-color: #f8f9fa; /* Optional: Background color for each list item */
+#todo-list li {
+    background-color: #f9f9f9;
+    margin-top: 10px;
     padding: 10px;
     border-radius: 4px;
-    border: 1px solid #ddd; /* Optional: Border for each list item */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    /* CSS styles for screens narrower than 600px */
+    /* This could be where you make elements stack vertically, for example */
 }
