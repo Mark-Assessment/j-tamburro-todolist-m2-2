@@ -1,37 +1,41 @@
+/* CSS code in /assets/css/styles.css */
+
 body {
     background-image: url('/assets/images/background-image.jpg');
-    background-size: cover; /* Makes the background cover the entire area */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the background image from repeating */
-    background-attachment: fixed; /* Keeps the background fixed when scrolling */
-    height: 100vh; /* Ensures the body takes the full viewport height */
-    margin: 0; /* Removes default margin */
-    font-family: Arial, sans-serif; /* Optional: your preferred font */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 .container {
     display: flex;
-    justify-content: right; /* Centers the content horizontally */
-    align-items: right; /* Centers the content vertically */
-    height: 70%; /* Makes the container full height of the viewport */
+    justify-content: right;
+    /* Centers the content horizontally */
+    align-items: right;
+    /* Centers the content vertically */
+    height: 70%;
+    /* Makes the container full height of the viewport */
     margin: 100px;
 }
 
 .card {
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 30px;
-    width: 300px; /* Adjust width as needed */
+    width: 300px;
 }
 
 .text {
-    text-align: left; /* Centers text inside the card */
+    text-align: center;
 }
 
 .text h1 {
     margin-bottom: 20px;
-    text-align: center;
 }
 
 #todo-form input[type="text"] {
@@ -69,9 +73,4 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-@media only screen and (max-width: 600px) {
-    /* CSS styles for screens narrower than 600px */
-    /* This could be where you make elements stack vertically, for example */
 }
