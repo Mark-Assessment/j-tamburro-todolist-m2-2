@@ -1,4 +1,4 @@
-// JavaScript code in /assets/js/script.js
+document.addEventListener('DOMContentLoaded', loadTasksFromLocalStorage);
 
 const todoForm = document.getElementById('todo-form');
 const todoInput = document.getElementById('todo-input');
@@ -6,7 +6,7 @@ const todoList = document.getElementById('todo-list');
 
 todoForm.addEventListener('submit', function (event) {
     event.preventDefault();
-    const newTask = todoInput.value.trim(); // Use trim() to remove any leading/trailing whitespace
+    const newTask = todoInput.value.trim();
 
     if (newTask === '') {
         alert('Please enter a task!');
@@ -14,99 +14,118 @@ todoForm.addEventListener('submit', function (event) {
     }
 
     addTask(newTask);
-
-    // Clear the input field after adding a task
     todoInput.value = '';
+    saveTasksToLocalStorage();
 });
 
-function addTask(task) {
+function addTask(task, completed = false) {
     const listItem = document.createElement('li');
+    listItem.className = 'todo-item';
     
-    // Create a container for task text and buttons
+    const taskContent = document.createElement('div');
+    taskContent.className = 'task-content';
+
     const taskText = document.createElement('span');
+    taskText.className = 'task-text';
     taskText.textContent = task;
     
-    // Create checkbox
-    const checkBox = createCheckbox();
-
-    // Create delete button
+    const checkBox = createCheckbox(completed);
     const deleteButton = createDeleteButton();
-    
-    // Create edit button
     const editButton = document.createElement('button');
-    editButton.textContent = 'Edit';
+    editButton.className = 'edit-button';
+    editButton.innerHTML = '<i class="fas fa-edit"></i>';
     
-    // Add event listener to the edit button
     editButton.addEventListener('click', function() {
         toggleTaskEditState(listItem, taskText, editButton);
+        saveTasksToLocalStorage();
     });
 
-    // Add event listener to the checkbox
     checkBox.addEventListener('change', function() {
         if (this.checked) {
             taskText.style.textDecoration = 'line-through';
+            listItem.classList.add('completed');
         } else {
             taskText.style.textDecoration = 'none';
+            listItem.classList.remove('completed');
+        }
+        saveTasksToLocalStorage();
+    });
+
+    deleteButton.addEventListener('click', function() {
+        if (confirm('Are you sure you want to delete this task?')) {
+            listItem.remove();
+            saveTasksToLocalStorage();
         }
     });
-
-    // Add event listener to the delete button
-    deleteButton.addEventListener('click', function() {
-        listItem.remove();
-    });
     
-    // Append all elements to the listItem
-    listItem.appendChild(taskText);
-    listItem.appendChild(checkBox);
-    listItem.appendChild(deleteButton);
+    taskContent.appendChild(checkBox);
+    taskContent.appendChild(taskText);
+    listItem.appendChild(taskContent);
     listItem.appendChild(editButton);
+    listItem.appendChild(deleteButton);
 
-    // Append the listItem to the todoList
+    if (completed) {
+        taskText.style.textDecoration = 'line-through';
+        listItem.classList.add('completed');
+    }
+
     todoList.appendChild(listItem);
+    saveTasksToLocalStorage();
 }
 
 function toggleTaskEditState(listItem, taskText, editButton) {
     const isEditing = listItem.classList.contains('editing');
 
     if (isEditing) {
-        // Switch back to view mode
         const input = listItem.querySelector('input[type="text"]');
         if (input) {
-            const newText = input.value.trim(); // Get edited value
-            if (newText) { // Ensure the new text is not empty
-                taskText.textContent = newText; // Update task text with edited value
+            const newText = input.value.trim();
+            if (newText) {
+                taskText.textContent = newText;
             }
-            listItem.replaceChild(taskText, input); // Replace the input field with the task text span
+            listItem.replaceChild(taskText, input);
         }
         listItem.classList.remove('editing');
-        editButton.textContent = 'Edit';
+        editButton.innerHTML = '<i class="fas fa-edit"></i>';
     } else {
-        // Switch to edit mode
-        const currentText = taskText.textContent.trim(); // Get current task text
+        const currentText = taskText.textContent.trim();
         const input = document.createElement('input');
         input.type = 'text';
         input.value = currentText;
-
-        // Replace taskText with input field
         listItem.replaceChild(input, taskText);
-
         listItem.classList.add('editing');
-        editButton.textContent = 'Save';
+        editButton.innerHTML = '<i class="fas fa-save"></i>';
     }
+    saveTasksToLocalStorage();
 }
 
-function createCheckbox() {
+function createCheckbox(completed = false) {
     const checkBox = document.createElement('input');
     checkBox.setAttribute('type', 'checkbox');
+    checkBox.checked = completed;
     return checkBox;
 }
 
 function createDeleteButton() {
     const deleteButton = document.createElement('button');
-    deleteButton.textContent = 'Delete';
+    deleteButton.className = 'delete-button';
+    deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
     return deleteButton;
 }
 
+function saveTasksToLocalStorage() {
+    const tasks = [];
+    document.querySelectorAll('#todo-list li').forEach(task => {
+        const taskText = task.querySelector('span').textContent;
+        const isCompleted = task.classList.contains('completed');
+        tasks.push({ text: taskText, completed: isCompleted });
+    });
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+}
 
+function loadTasksFromLocalStorage() {
+    const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    tasks.forEach(task => addTask(task.text, task.completed));
+}
 
 

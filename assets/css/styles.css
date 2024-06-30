@@ -8,25 +8,22 @@ body {
     background-attachment: fixed;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Alegreya Sans", sans-serif;
 }
 
 .container {
     display: flex;
     justify-content: right;
-    /* Centers the content horizontally */
     align-items: right;
-    /* Centers the content vertically */
-    height: 70%;
-    /* Makes the container full height of the viewport */
-    margin: 100px;
+    height: 100%;
+    padding: 100px;
 }
 
 .card {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding: 30px;
+    padding: 20px;
     width: 300px;
 }
 
@@ -54,6 +51,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+    align-items: left;
 }
 
 #todo-form button:hover {
@@ -72,5 +70,52 @@ body {
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
+    align-items: right;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+.task-content {
+    display: flex;
+    align-items: right;
+    flex: 1;
+}
+
+.task-text {
+    margin-left: 10px;
+    flex-grow: 1;
+    word-break: break-word; /* Ensure long words break to the next line */
+}
+
+#todo-list button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#todo-list button:hover {
+    color: #000;
+}
+
+#todo-list i.fas.fa-trash {
+    color: #5F9EA0; /* Change to your preferred color */
+}
+
+#todo-list i.fas.fa-edit {
+    color: #5F9EA0; /* Change to your preferred color */
+}
+
+#todo-list button:hover i.fas.fa-trash {
+    color: #0b5e60; /* Change to your preferred hover color */
+}
+
+#todo-list button:hover i.fas.fa-edit {
+    color: #0b5e60; /* Change to your preferred hover color */
 }
