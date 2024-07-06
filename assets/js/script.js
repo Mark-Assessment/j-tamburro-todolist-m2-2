@@ -86,6 +86,7 @@ function createEditButton(listItem, taskText) {
     editButton.innerHTML = '<i class="fas fa-edit"></i>';
     
     editButton.addEventListener('click', function() {
+        console.log('Edit button clicked');
         toggleTaskEditState(listItem, taskText, editButton);
         saveTasksToLocalStorage();
     });
@@ -95,26 +96,36 @@ function createEditButton(listItem, taskText) {
 
 function toggleTaskEditState(listItem, taskText, editButton) {
     const isEditing = listItem.classList.contains('editing');
+    console.log(`Toggle edit state: ${isEditing}`);
 
+    const taskContent = listItem.querySelector('.task-content');
     if (isEditing) {
-        const input = listItem.querySelector('input[type="text"]');
+        const input = taskContent.querySelector('input[type="text"]');
         if (input) {
             const newText = input.value.trim();
+            console.log(`New text: ${newText}`);
             if (newText) {
                 taskText.textContent = newText;
             }
-            listItem.replaceChild(taskText, input);
+            taskContent.replaceChild(taskText, input);
         }
         listItem.classList.remove('editing');
         editButton.innerHTML = '<i class="fas fa-edit"></i>';
     } else {
         const currentText = taskText.textContent.trim();
+        console.log(`Current text: ${currentText}`);
         const input = document.createElement('input');
         input.type = 'text';
         input.value = currentText;
-        listItem.replaceChild(input, taskText);
-        listItem.classList.add('editing');
-        editButton.innerHTML = '<i class="fas fa-save"></i>';
+
+        // Replace only if taskText is a child of taskContent
+        if (taskText.parentNode === taskContent) {
+            taskContent.replaceChild(input, taskText);
+            listItem.classList.add('editing');
+            editButton.innerHTML = '<i class="fas fa-save"></i>';
+        } else {
+            console.error('taskText is not a child of taskContent');
+        }
     }
     saveTasksToLocalStorage();
 }
@@ -122,9 +133,12 @@ function toggleTaskEditState(listItem, taskText, editButton) {
 function saveTasksToLocalStorage() {
     const tasks = [];
     document.querySelectorAll('#todo-list li').forEach(task => {
-        const taskText = task.querySelector('span').textContent;
-        const isCompleted = task.classList.contains('completed');
-        tasks.push({ text: taskText, completed: isCompleted });
+        const taskText = task.querySelector('span');
+        if (taskText) {
+            const text = taskText.textContent;
+            const isCompleted = task.classList.contains('completed');
+            tasks.push({ text, completed: isCompleted });
+        }
     });
     localStorage.setItem('tasks', JSON.stringify(tasks));
 }
@@ -133,3 +147,4 @@ function loadTasksFromLocalStorage() {
     const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
     tasks.forEach(task => addTask(task.text, task.completed));
 }
+
