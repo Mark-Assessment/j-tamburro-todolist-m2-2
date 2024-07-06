@@ -31,14 +31,7 @@ function addTask(task, completed = false) {
     
     const checkBox = createCheckbox(completed);
     const deleteButton = createDeleteButton();
-    const editButton = document.createElement('button');
-    editButton.className = 'edit-button';
-    editButton.innerHTML = '<i class="fas fa-edit"></i>';
-    
-    editButton.addEventListener('click', function() {
-        toggleTaskEditState(listItem, taskText, editButton);
-        saveTasksToLocalStorage();
-    });
+    const editButton = createEditButton(listItem, taskText);
 
     checkBox.addEventListener('change', function() {
         if (this.checked) {
@@ -57,7 +50,7 @@ function addTask(task, completed = false) {
             saveTasksToLocalStorage();
         }
     });
-    
+
     taskContent.appendChild(checkBox);
     taskContent.appendChild(taskText);
     listItem.appendChild(taskContent);
@@ -71,6 +64,33 @@ function addTask(task, completed = false) {
 
     todoList.appendChild(listItem);
     saveTasksToLocalStorage();
+}
+
+function createCheckbox(completed = false) {
+    const checkBox = document.createElement('input');
+    checkBox.setAttribute('type', 'checkbox');
+    checkBox.checked = completed;
+    return checkBox;
+}
+
+function createDeleteButton() {
+    const deleteButton = document.createElement('button');
+    deleteButton.className = 'delete-button';
+    deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
+    return deleteButton;
+}
+
+function createEditButton(listItem, taskText) {
+    const editButton = document.createElement('button');
+    editButton.className = 'edit-button';
+    editButton.innerHTML = '<i class="fas fa-edit"></i>';
+    
+    editButton.addEventListener('click', function() {
+        toggleTaskEditState(listItem, taskText, editButton);
+        saveTasksToLocalStorage();
+    });
+
+    return editButton;
 }
 
 function toggleTaskEditState(listItem, taskText, editButton) {
@@ -99,20 +119,6 @@ function toggleTaskEditState(listItem, taskText, editButton) {
     saveTasksToLocalStorage();
 }
 
-function createCheckbox(completed = false) {
-    const checkBox = document.createElement('input');
-    checkBox.setAttribute('type', 'checkbox');
-    checkBox.checked = completed;
-    return checkBox;
-}
-
-function createDeleteButton() {
-    const deleteButton = document.createElement('button');
-    deleteButton.className = 'delete-button';
-    deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
-    return deleteButton;
-}
-
 function saveTasksToLocalStorage() {
     const tasks = [];
     document.querySelectorAll('#todo-list li').forEach(task => {
@@ -127,5 +133,3 @@ function loadTasksFromLocalStorage() {
     const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
     tasks.forEach(task => addTask(task.text, task.completed));
 }
-
-

@@ -1,5 +1,4 @@
-/* CSS code in /assets/css/styles.css */
-
+/* General Styles */
 body {
     background-image: url('/assets/images/background-image.jpg');
     background-size: cover;
@@ -11,47 +10,62 @@ body {
     font-family: "Alegreya Sans", sans-serif;
 }
 
+/* Container Styles */
 .container {
     display: flex;
-    justify-content: right;
-    align-items: right;
+    justify-content: center;
+    align-items: flex-start; /* Align items to start for vertical alignment */
     height: 100%;
-    padding: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .card {
-    background-color: #fff;
+    background-color: #ddede8;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding: 20px;
-    width: 300px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin-top: 20px; /* Add some margin to separate it from the top */
 }
 
 .text {
     text-align: center;
+    font-family: "Alegreya Sans", sans-serif;
 }
 
-.text h1 {
+h1 {
     margin-bottom: 20px;
+    color: #5F9EA0;
+    font-size: 40px;
+}
+
+#todo-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #todo-form input[type="text"] {
-    width: 70%;
+    width: calc(100% - 20px);
     padding: 10px;
     border: 2px solid #ddd;
     border-radius: 4px;
-    margin-right: 10px;
+    margin-top: 10px;
 }
 
 #todo-form button {
     padding: 10px 20px;
+    margin-top: 10px;
     background-color: #5F9EA0;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
-    align-items: left;
 }
 
 #todo-form button:hover {
@@ -61,6 +75,7 @@ body {
 #todo-list {
     list-style: none;
     padding: 0;
+    margin-top: 20px;
 }
 
 #todo-list li {
@@ -70,25 +85,26 @@ body {
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
-    align-items: right;
+    align-items: center;
 }
 
 .todo-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .task-content {
     display: flex;
-    align-items: right;
+    align-items: center;
     flex: 1;
 }
 
 .task-text {
     margin-left: 10px;
     flex-grow: 1;
-    word-break: break-word; /* Ensure long words break to the next line */
+    word-break: break-word;
 }
 
 #todo-list button {
@@ -105,17 +121,84 @@ body {
 }
 
 #todo-list i.fas.fa-trash {
-    color: #5F9EA0; /* Change to your preferred color */
+    color: #5F9EA0;
 }
 
 #todo-list i.fas.fa-edit {
-    color: #5F9EA0; /* Change to your preferred color */
+    color: #5F9EA0;
 }
 
 #todo-list button:hover i.fas.fa-trash {
-    color: #0b5e60; /* Change to your preferred hover color */
+    color: #0b5e60;
 }
 
 #todo-list button:hover i.fas.fa-edit {
-    color: #0b5e60; /* Change to your preferred hover color */
+    color: #0b5e60;
 }
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        justify-content: flex-end; /* Align container to the right */
+        align-items: flex-start; /* Align items to start for vertical alignment */
+        padding-right: 20px;
+        padding-top: 0; /* Reset padding-top */
+    }
+
+    .card {
+        margin-right: 10%; /* Adjust margin to bring it away from the edge */
+        margin-top: 40px; /* Adjust top margin to position card higher */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        justify-content: center; /* Center container on smaller screens */
+        padding: 10px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    #todo-form input[type="text"] {
+        width: calc(100% - 16px);
+    }
+
+    #todo-form button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    #todo-form input[type="text"] {
+        width: calc(100% - 12px);
+        padding: 8px;
+    }
+
+    #todo-form button {
+        padding: 8px 16px;
+    }
+
+    #todo-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #todo-list button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+
+
