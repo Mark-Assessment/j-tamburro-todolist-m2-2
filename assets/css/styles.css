@@ -1,5 +1,5 @@
-/* General Styles */
 body {
+    /* Background Image sourced from https://www.pexels.com */
     background-image: url('/assets/images/background-image.jpg');
     background-size: cover;
     background-position: center;
@@ -10,12 +10,10 @@ body {
     font-family: "Alegreya Sans", sans-serif;
 }
 
-/* Container Styles */
 .container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    /* Align items to start for vertical alignment */
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
@@ -31,7 +29,6 @@ body {
     max-width: 400px;
     box-sizing: border-box;
     margin-top: 20px;
-    /* Add some margin to separate it from the top */
 }
 
 .text {
@@ -138,30 +135,23 @@ h1 {
     color: #0b5e60;
 }
 
-/* Media Queries for Responsive Design */
 @media (min-width: 768px) {
     .container {
         justify-content: flex-end;
-        /* Align container to the right */
         align-items: flex-start;
-        /* Align items to start for vertical alignment */
         padding-right: 20px;
         padding-top: 0;
-        /* Reset padding-top */
     }
 
     .card {
         margin-right: 10%;
-        /* Adjust margin to bring it away from the edge */
         margin-top: 40px;
-        /* Adjust top margin to position card higher */
     }
 }
 
 @media (max-width: 768px) {
     .container {
         justify-content: center;
-        /* Center container on smaller screens */
         padding: 10px;
     }
 

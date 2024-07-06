@@ -118,7 +118,6 @@ function toggleTaskEditState(listItem, taskText, editButton) {
         input.type = 'text';
         input.value = currentText;
 
-        // Replace only if taskText is a child of taskContent
         if (taskText.parentNode === taskContent) {
             taskContent.replaceChild(input, taskText);
             listItem.classList.add('editing');
