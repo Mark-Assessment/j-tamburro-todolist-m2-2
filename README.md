@@ -99,6 +99,12 @@ I chose these colours as they complement each other well and co-ordinate nicely 
 
   ![Edit Button](https://github.com/jtam90/todolist/blob/main/documents/screenshots/edit-button.png)
 
+  ![Edit Field](https://github.com/jtam90/todolist/blob/main/documents/screenshots/edit-field.png)
+
+  ## Delete Button
+
+  The delete button allows the user to delete a task from their list. The colour of the delete icon button changes to a darker shade when it is hovered over. Once the delete button is clicked, an alert will pop up asking the user if they are sure they want to delete the task. The user then has the option of clicking either "Ok" which will then delete the task, or "Cancel" which will prevent the task from being deleted.
+
   
 
 
