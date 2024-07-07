@@ -57,13 +57,14 @@ I chose these colours as they complement each other well and co-ordinate nicely 
 
   ## Input Field
 
-  The input field has a placeholder text of "Add a new task..."
+  The input field has a placeholder text of "Add a new task...". This enables the user to type in their desired task.
 
   ![Input Field](https://github.com/jtam90/todolist/blob/main/documents/screenshots/input-field-screenshot.png)
 
   ## Add Task Button
 
-  The "Add Task" button is located under the input field, in the centre. Depending on whether it is displayed on a mobile device or whether it is displayed on a tablet/desktop device, it shows up differently.
+  The "Add Task" button is located under the input field, in the centre. This enables the user to trigger the action of their task being added to a list by either clicking the button, or hitting the enter/return key on their keyboard.
+  Depending on whether it is displayed on a mobile device or whether it is displayed on a tablet/desktop device, it shows up differently. 
 
   Mobile:
 
@@ -73,7 +74,26 @@ I chose these colours as they complement each other well and co-ordinate nicely 
 
   ![Add Task Button Desktop](https://github.com/jtam90/todolist/blob/main/documents/screenshots/add-task-button-desktop.png)
 
-  ##
+  ## Task List
+
+  The task list enables the user to have a list of tasks they would like to complete. It includes their added tasks, as well as a checkbox, an edit button and a delete button. 
+  Depending on whether it is displayed on a mobile device or whether it is displayed on a tablet/desktop device, it shows up differently.
+
+  Desktop:
+
+  ![Task List Desktop](https://github.com/jtam90/todolist/blob/main/documents/screenshots/task-list-desktop.png)
+
+  Mobile:
+
+  ![Task List Mobile](https://github.com/jtam90/todolist/blob/main/documents/screenshots/task-list-mobile.png)
+
+  ## Checkbox
+
+  The checkbox can be clicked by the user if they have completed the task. Upon clicking the checkbox, the task font will have a strikethrough text decoration for easy readability and user experience.
+
+  
+
+
 
 
 
