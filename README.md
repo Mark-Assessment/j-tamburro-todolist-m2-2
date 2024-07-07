@@ -141,7 +141,68 @@ I chose these colours as they complement each other well and co-ordinate nicely 
 - CSS3
 - JavaScript
 
+# Testing
 
+Please refer to [TESTING.md](/TESTING.md) for all testing documentation.
+
+# Deployment
+
+## Git Hub Pages
+
+This project was deployed to GitHub Pages. The steps to deploy to GitHub Pages are as follows:
+
+1. Log into GitHub Pages and find the GitHub Repository.
+2. Locate the settings tab at the top of the page and then scroll down the page until you reach the section called Pages, on the left-hand side.
+3. Find "Source" and then click on the dropdown menu and select "Main" and save it.
+4. The page will automatically refresh.
+5. Locate the published live <a href="https://jtam90.github.io/todolist/" target="_blank">link.</a>
+
+## Forking
+
+In order to view and make changes without having an effect on the original repository, we can fork the GitHub Repository.
+
+This is done by the following steps -
+
+1. Log into GitHub.
+2. Locate the GitHub Repository.
+3. Near the "Settings" button, there is a "Fork" button.
+4. Click "Fork" and you will have a copy of the original in your GitHub account.
+
+## Local Deployment
+
+You can also make a local copy of this project by cloning it.
+
+You can do this by typing the following into your terminal: 
+- git clone https://jtam90.github.io/todolist/ 
+
+# Credits
+
+## Content
+
+For the basic steps of the To-Do List, the following link was very helpful:
+ https://hackr.io/blog/how-to-create-a-javascript-to-do-list
+
+## Media
+
+The background image was taken from <a href="https://www.pexels.com" target="_blank">Pexels</a>. 
+
+## Tools
+
+Some other tools used were:
+
+- <a href="https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb" target="_blank">Responsive Viewer</a>
+  -This was used to capture images of how my site displays across different devices.
+
+- <a href="https://ui.dev/amiresponsive" target="_blank">Am I Responsive?</a>
+  -This was used for my starting image at the beginning of my README.md, displaying my site across different devices in one image.
+
+- <a href="https://chat.openai.com" target="_blank">ChatGPT</a>
+  -This was used for help with understanding code on a deeper level, mainly JavaScript, so that I could use it efficiently. It was also very helpful when I had issues with my file paths and deployment problems.
+
+### Acknowledgements
+
+- <a href="https://github.com/RachelFurlong-dev" target="_blank">Rachel Furlong</a> my tutor and cohort leader who has been a wonderful fountain of knowledge and information, offering reassurance and encouragement when needed.
+- My friends and family who have not only tested my site and given me honest feedback, but also kept me sane in the process.
 
 
 
