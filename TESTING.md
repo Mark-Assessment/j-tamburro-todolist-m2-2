@@ -32,4 +32,4 @@
 **I would like to be able to store my list so that when the webpage is reloaded, I can still see my completed and/or outstanding tasks.
 - The user has the option of the task list remaining upon the webpage being reloaded.
 
-![]
+![Reload List](https://github.com/jtam90/todolist/blob/main/documents/screenshots/reload-list.png)
