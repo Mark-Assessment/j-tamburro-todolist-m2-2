@@ -59,7 +59,13 @@ I chose these colours as they complement each other well and co-ordinate nicely 
 
   The input field has a placeholder text of "Add a new task..."
 
-  Depending on whether it is displayed on a mobile device or whether it is displayed on a tablet/desktop device, it shows up slightly differently.
+  ![Input Field](https://github.com/jtam90/todolist/blob/main/documents/screenshots/input-field-screenshot.png)
+
+  ## Add Task Button
+
+  The "Add Task" button is located under the input field, in the centre. Depending on whether it is displayed on a mobile device or whether it is displayed on a tablet/desktop device, it shows up differently.
 
   
+
+
 
