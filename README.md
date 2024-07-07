@@ -24,9 +24,9 @@ Below is a table representing the different colours used in this project:
 
 <table>
   <tr>
-    <td style="background-color: #5F9EA0; width: 50px; height: 50px;"></td>
-    <td style="background-color: #0b5e60; width: 50px; height: 50px;"></td>
-    <td style="background-color: #f9f9f9; width: 50px; height: 50px;"></td>
-    <td style="background-color: #ddede8; width: 50px; height: 50px;"></td>
+    <td style="background-color: #5F9EA0; width: 70px; height: 70px;"></td>
+    <td style="background-color: #0b5e60; width: 70px; height: 70px;"></td>
+    <td style="background-color: #f9f9f9; width: 70px; height: 70px;"></td>
+    <td style="background-color: #ddede8; width: 70px; height: 70px;"></td>
   </tr>
-</table> 
+</table>
