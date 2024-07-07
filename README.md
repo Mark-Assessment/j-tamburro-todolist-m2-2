@@ -32,4 +32,5 @@ I chose these colours as they complement each other well and co-ordinate nicely 
 ## Typography
 
   I have used the font "Alegreya Sans" as the font throughout the site, with a fall back font of "sans-serif" for easy readability and simplicity. I have used <a href="https://fonts.google.com" target="_blank">Google Fonts</a> for this.
-  ![Font Screenshot](/documents/screenshots/font-screenshot.png)
+  
+  ![Font Screenshot](https://github.com/jtam90/todolist/blob/main/documents/screenshots/font-screenshot.png)
