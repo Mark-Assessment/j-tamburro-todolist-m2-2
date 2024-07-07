@@ -97,7 +97,9 @@ I chose these colours as they complement each other well and co-ordinate nicely 
 
   The edit button allows the user to edit the task. The colour of the edit icon button changes to a darker shade when it is hovered over. Once in edit mode, there is a "save" icon button to enable the user to save their newly edited task. 
 
-  ![Edit Button]()
+  ![Edit Button](https://github.com/jtam90/todolist/blob/main/documents/screenshots/edit-button.png)
+
+  
 
 
 
