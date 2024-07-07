@@ -9,7 +9,7 @@ For my Milestone Project 2 in L5 Web Application Development, I have designed an
 # User Experience - UX
 
 ## User Stories
--- As a User...
+As a User...
 - I would like to be able to have a simple application that allows me to add a list of tasks that I would like to complete.
 - I would like to be able to check the tasks off as they are completed.
 - I would like to be able to edit tasks, so that I can change the wording.
@@ -27,4 +27,9 @@ Below represents the different colours used in this project:
 - ![#ddede8](https://via.placeholder.com/15/ddede8/000000?text=+) `#ddede8`
 - ![#f9f9f9](https://via.placeholder.com/15/f9f9f9/000000?text=+) `#f9f9f9`
 
-I chose this colours as they complement each other well and co-ordinate nicely with the background image. I also thought the colours worked well for a To-Do List, as they are not distracting and instead have quite a calming effect.
+I chose these colours as they complement each other well and co-ordinate nicely with the background image. I also thought the colours worked well for a To-Do List, as they are not distracting and instead have quite a calming effect.
+
+## Typography
+
+  I have used the font "Alegreya Sans" as the font throughout the site, with a fall back font of "sans-serif" for easy readability and simplicity. I have used <a href="https://fonts.google.com" target="_blank">Google Fonts</a> for this.
+  ![Font Screenshot](/documents/screenshots/font-screenshot.png)
