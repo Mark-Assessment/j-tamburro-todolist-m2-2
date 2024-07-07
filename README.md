@@ -2,7 +2,7 @@
 
 You can visit the live site [here](https://jtam90.github.io/todolist/).
 
-![Responsive-View](/todolist/documents/screenshots/responsive-view.png)
+![responsive-view](/todolist/documents/screenshots/responsive-view.png)
 
 For my Milestone Project 2 in L5 Web Application Development, I have designed and created a To-Do List. This has been created with the intention of users being able to add a list of tasks with the ability of checking them off, editing them, deleting them and storing them. This website has been developed in such a way that it is very simple to use, as well as being fully accessible and responsive, covering a range of different devices.
 
