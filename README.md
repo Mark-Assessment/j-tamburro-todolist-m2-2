@@ -65,7 +65,15 @@ I chose these colours as they complement each other well and co-ordinate nicely 
 
   The "Add Task" button is located under the input field, in the centre. Depending on whether it is displayed on a mobile device or whether it is displayed on a tablet/desktop device, it shows up differently.
 
-  
+  Mobile:
+
+  ![Add Task Button Mobile](https://github.com/jtam90/todolist/blob/main/documents/screenshots/add-task-button-mobile.png)
+
+  Desktop:
+
+  ![Add Task Button Desktop](https://github.com/jtam90/todolist/blob/main/documents/screenshots/add-task-button-desktop.png)
+
+  ##
 
 
 
