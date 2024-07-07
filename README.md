@@ -180,7 +180,8 @@ You can do this by typing the following into your terminal:
 ## Content
 
 For the basic steps of the To-Do List, the following link was very helpful:
- https://hackr.io/blog/how-to-create-a-javascript-to-do-list
+
+https://hackr.io/blog/how-to-create-a-javascript-to-do-list
 
 ## Media
 
