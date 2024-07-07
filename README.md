@@ -111,6 +111,36 @@ I chose these colours as they complement each other well and co-ordinate nicely 
 
   The list of tasks also remains upon the webpage being reloaded.
 
+  ## Technologies Used
+
+- <a href="https://fonts.google.com" target="_blank">Google Fonts</a>:
+   - Google Fonts was used for the Alegreya Sans font that is used throughout the site, which was copied into the HTML and CSS code.
+
+- <a href="https://fontawesome.com" target="_blank">Font Awesome</a>:
+   - Font Awesome was used for the edit and delete icon buttons.
+
+- <a href="https://balsamiq.com/?gad_source=1&gclid=EAIaIQobChMIiIukqIrWhAMVf9QWBR36KgPkEAAYAiAAEgKzN_D_BwE" target="_blank">Balsamiq</a>:
+   - Balsamiq was used to create my wireframes for desktop, tablet and mobile devices.
+
+- Git:
+   - Git was used for the version control of the website.
+
+- <a href="https://www.gitpod.io" target="_blank">GitPod</a>
+   - GitPod was used as a cloud-based IDE, integrated for collaborative development, complementing Git workflows.
+
+- <a href="https://github.com" target="_blank">Github</a>:
+   - Github was used to host the code of the website.
+
+- <a href="www.pexels.com" target="_blank">Pexels</a>:
+   - Pexels was used for the background image.
+
+
+## Languages Used
+
+- HTML5
+- CSS3
+- JavaScript
+
 
 
 
