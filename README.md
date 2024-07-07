@@ -63,7 +63,7 @@ I chose these colours as they complement each other well and co-ordinate nicely 
 
   ## Add Task Button
 
-  The "Add Task" button is located under the input field, in the centre. This enables the user to trigger the action of their task being added to a list by either clicking the button, or hitting the enter/return key on their keyboard.
+  The "Add Task" button is located under the input field, in the centre. This enables the user to trigger the action of their task being added to a list by either clicking the button, or hitting the enter/return key on their keyboard. The colour of the "Add Task" button changes to a darker shade when it is hovered over.
   Depending on whether it is displayed on a mobile device or whether it is displayed on a tablet/desktop device, it shows up differently. 
 
   Mobile:
@@ -91,7 +91,15 @@ I chose these colours as they complement each other well and co-ordinate nicely 
 
   The checkbox can be clicked by the user if they have completed the task. Upon clicking the checkbox, the task font will have a strikethrough text decoration for easy readability and user experience.
 
-  
+  ![Checkbox](https://github.com/jtam90/todolist/blob/main/documents/screenshots/checkbox-screenshot.png)
+
+  ## Edit Button
+
+  The edit button allows the user to edit the task. The colour of the edit icon button changes to a darker shade when it is hovered over. Once in edit mode, there is a "save" icon button to enable the user to save their newly edited task. 
+
+  ![Edit Button]()
+
+
 
 
 
