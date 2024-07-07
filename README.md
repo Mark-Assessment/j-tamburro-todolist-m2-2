@@ -40,3 +40,16 @@ I chose these colours as they complement each other well and co-ordinate nicely 
   I have used just one image for this site, which is used as the background image. I chose this image because it is simple and does not distract the user. Plants are known for their soothing and relaxing effects on the mind, which complement the use of a To-Do List nicely.
 
   ![Background Image](https://github.com/jtam90/todolist/blob/main/assets/images/background-image.jpg)
+
+  # Wireframes
+
+  ## Desktop
+  ## Tablet
+  ## Mobile
+
+  # Features
+
+  ## Heading
+
+  The heading is in an italic font style for emphasis and says "Things To Do..."
+
