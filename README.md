@@ -24,5 +24,7 @@ Below represents the different colours used in this project:
 
 - ![#5F9EA0](https://via.placeholder.com/15/5F9EA0/000000?text=+) `#5F9EA0`
 - ![#0b5e60](https://via.placeholder.com/15/0b5e60/000000?text=+) `#0b5e60`
-- ![#f9f9f9](https://via.placeholder.com/15/f9f9f9/000000?text=+) `#f9f9f9`
 - ![#ddede8](https://via.placeholder.com/15/ddede8/000000?text=+) `#ddede8`
+- ![#f9f9f9](https://via.placeholder.com/15/f9f9f9/000000?text=+) `#f9f9f9`
+
+I chose this colours as they complement each other well and co-ordinate nicely with the background image. I also thought the colours worked well for a To-Do List, as they are not distracting and instead have quite a calming effect.
