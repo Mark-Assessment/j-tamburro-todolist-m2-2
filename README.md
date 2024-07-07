@@ -44,8 +44,18 @@ I chose these colours as they complement each other well and co-ordinate nicely 
   # Wireframes
 
   ## Desktop
+
+  ![Desktop Wireframe](https://github.com/jtam90/todolist/blob/main/documents/screenshots/wireframe-desktop.png)
+
   ## Tablet
+
+  ![Tablet Wireframe](https://github.com/jtam90/todolist/blob/main/documents/screenshots/wireframe-tablet.png)
+
   ## Mobile
+
+  ![Mobile Wireframe](https://github.com/jtam90/todolist/blob/main/documents/screenshots/wireframe-mobile.png)
+
+
 
   # Features
 
