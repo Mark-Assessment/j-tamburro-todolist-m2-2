@@ -20,13 +20,9 @@ For my Milestone Project 2 in L5 Web Application Development, I have designed an
 
 ## Colour Scheme
 
-Below is a table representing the different colours used in this project:
+Below represents the different colours used in this project:
 
-<table>
-  <tr>
-    <td style="background-color: #5F9EA0; width: 70px; height: 70px;"></td>
-    <td style="background-color: #0b5e60; width: 70px; height: 70px;"></td>
-    <td style="background-color: #f9f9f9; width: 70px; height: 70px;"></td>
-    <td style="background-color: #ddede8; width: 70px; height: 70px;"></td>
-  </tr>
-</table>
+- ![#5F9EA0](https://via.placeholder.com/15/5F9EA0/000000?text=+) `#5F9EA0`
+- ![#0b5e60](https://via.placeholder.com/15/0b5e60/000000?text=+) `#0b5e60`
+- ![#f9f9f9](https://via.placeholder.com/15/f9f9f9/000000?text=+) `#f9f9f9`
+- ![#ddede8](https://via.placeholder.com/15/ddede8/000000?text=+) `#ddede8`
