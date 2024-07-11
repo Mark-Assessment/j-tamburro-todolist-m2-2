@@ -122,6 +122,14 @@ Brave:
 
 The only bug throughout this project that I have struggled with was to get the site properly displayed on some screens via a mobile device. I tried very hard to alter the CSS to resize things so that it looked identical or as close to identical as possible in comparison with tablet and desktop devices but could not get it to work. 
 
-![Bug]()
+Example of display on iPhone XR:
+![Bug](https://github.com/jtam90/todolist/blob/main/documents/screenshots/testing%20screenshots/bug.png)
+
+In order to achieve better results next time, I aim to keep practising my responsive skills so that I can do better next time.
+
+The positive takeaway from this bug despite how it is displayed slightly differently, is that it is still clear, easy to navigate and functional.
+
+
+
 
 
