@@ -33,3 +33,39 @@
 - The user has the option of the task list remaining upon the webpage being reloaded.
 
 ![Reload List](https://github.com/jtam90/todolist/blob/main/documents/screenshots/reload-list.png)
+
+## User Feedback
+
+Friends and family have tested my website on different devices and browsers. The feedback that I have received is that it is clear, easy to navigate, clean and functional as well as responsive. All buttons also work.
+
+## Automated Testing vs Manual Testing
+
+- Automated Testing using Jest is a form of testing framework that can be implemented into the JavaScript code. It runs alongside the development process meaning that the code is being automatically tested for errors and bugs along the way to ensure that it is functional and clean and behaving as expected.
+
+- Manual Testing using either JSLint or JSHint is a form of manual testing by the developer. The testing can be completed during the development process in order to catch any problems early, or it can be completed at the end of the development process, although this could take up further time. The testing through JSLint/JSHint is completed by copying the JavaScript code into the linter and receiving the results as to whether the code has passed through the testing process or if there are bugs and errors present.
+
+# Testing for Milestone 2
+
+Although both Jest and JSLint/JSHint are essential for JavaScript development at different stages, in this project I have decided to run my tests through a linter, JSHint. 
+In a day-to-day development situation, I can fully acknowledge why Jest would be used, as it makes the development process much smoother running, and enables good time management with the testing process being carried out in the background automatically.
+For this project, I have not had the time-scale in the project window to set this up properly, so I have opted for manual testing on this occasion.
+
+## Online Validation Sites
+
+I have tested my website by running my HTML, CSS and JavaScript through the following online validation sites:
+
+- The W3C MarkUp Validation Service
+- The W3C CSS Validation Service - Jigsaw
+- JSHint
+
+## Performance Results
+
+- W3C MarkUp Validation Service
+
+The HTML code initially received just one error:
+
+![W3C Error](https://github.com/jtam90/todolist/blob/main/documents/screenshots/testing%20screenshots/htmlerror.png)
+
+I fixed this error by changing the HTML code:
+
+
