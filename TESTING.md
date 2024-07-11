@@ -58,7 +58,7 @@ I have tested my website by running my HTML, CSS and JavaScript through the foll
 - The W3C CSS Validation Service - Jigsaw
 - JSHint
 
-## Performance Results
+## Online Validation Results
 
 - W3C MarkUp Validation Service
 
@@ -67,5 +67,61 @@ The HTML code initially received just one error:
 ![W3C Error](https://github.com/jtam90/todolist/blob/main/documents/screenshots/testing%20screenshots/htmlerror.png)
 
 I fixed this error by changing the HTML code:
+
+![W3C Error Fix](https://github.com/jtam90/todolist/blob/main/documents/screenshots/testing%20screenshots/htmlcorrection.png)
+
+The HTML then passed the tests:
+
+![W3C Pass](https://github.com/jtam90/todolist/blob/main/documents/screenshots/testing%20screenshots/htmlpass.png)
+
+
+- The W3C CSS Validation Service - Jigsaw
+
+The CSS code passed all tests without any bugs or errors:
+
+![W3C CSS Pass](https://github.com/jtam90/todolist/blob/main/documents/screenshots/testing%20screenshots/csspass.png)
+
+
+- JSHint
+
+The JavaScript code passed all tests without any bugs or errors:
+
+![JSHint Pass](https://github.com/jtam90/todolist/blob/main/documents/screenshots/testing%20screenshots/jshint.png)
+
+
+## Performance Results
+
+I ran my site through Lighthouse and received the following results for both mobile and desktop devices:
+
+Desktop -
+
+![Lighthouse Desktop](https://github.com/jtam90/todolist/blob/main/documents/screenshots/testing%20screenshots/lighthouse-desktop.png)
+
+Mobile -
+
+![Lighthouse Mobile](https://github.com/jtam90/todolist/blob/main/documents/screenshots/testing%20screenshots/lighthouse-mobile.png)
+
+
+# Browser Testing
+
+I checked my site on three different browsers and achieved the same result for all:
+
+Google Chrome:
+
+![Google Chrome](https://github.com/jtam90/todolist/blob/main/documents/screenshots/testing%20screenshots/google-chrome.png)
+
+Microsoft Edge:
+
+![Microsoft Edge](https://github.com/jtam90/todolist/blob/main/documents/screenshots/testing%20screenshots/microsoft-edge.png)
+
+Brave:
+
+![Brave](https://github.com/jtam90/todolist/blob/main/documents/screenshots/testing%20screenshots/brave.png)
+
+## Bugs
+
+The only bug throughout this project that I have struggled with was to get the site properly displayed on some screens via a mobile device. I tried very hard to alter the CSS to resize things so that it looked identical or as close to identical as possible in comparison with tablet and desktop devices but could not get it to work. 
+
+![Bug]()
 
 
