@@ -74,7 +74,7 @@ I chose these colours as they complement each other well and co-ordinate nicely 
   ## Add Task Button
 
   The "Add Task" button is located under the input field, in the centre. This enables the user to trigger the action of their task being added to a list by either clicking the button, or hitting the enter/return key on their keyboard. The colour of the "Add Task" button changes to a darker shade when it is hovered over.
-  Depending on whether it is displayed on a mobile device or whether it is displayed on a tablet/desktop device, it shows up differently. Please see [Bugs](TESTING.md#bugs)
+  Depending on whether it is displayed on a mobile device or whether it is displayed on a tablet/desktop device, it shows up differently. Please see [Bugs](TESTING.md#bugs).
 
   Mobile:
 
