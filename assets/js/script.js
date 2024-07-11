@@ -21,19 +21,19 @@ todoForm.addEventListener('submit', function (event) {
 function addTask(task, completed = false) {
     const listItem = document.createElement('li');
     listItem.className = 'todo-item';
-    
+
     const taskContent = document.createElement('div');
     taskContent.className = 'task-content';
 
     const taskText = document.createElement('span');
     taskText.className = 'task-text';
     taskText.textContent = task;
-    
+
     const checkBox = createCheckbox(completed);
     const deleteButton = createDeleteButton();
     const editButton = createEditButton(listItem, taskText);
 
-    checkBox.addEventListener('change', function() {
+    checkBox.addEventListener('change', function () {
         if (this.checked) {
             taskText.style.textDecoration = 'line-through';
             listItem.classList.add('completed');
@@ -44,7 +44,7 @@ function addTask(task, completed = false) {
         saveTasksToLocalStorage();
     });
 
-    deleteButton.addEventListener('click', function() {
+    deleteButton.addEventListener('click', function () {
         if (confirm('Are you sure you want to delete this task?')) {
             listItem.remove();
             saveTasksToLocalStorage();
@@ -84,8 +84,8 @@ function createEditButton(listItem, taskText) {
     const editButton = document.createElement('button');
     editButton.className = 'edit-button';
     editButton.innerHTML = '<i class="fas fa-edit"></i>';
-    
-    editButton.addEventListener('click', function() {
+
+    editButton.addEventListener('click', function () {
         console.log('Edit button clicked');
         toggleTaskEditState(listItem, taskText, editButton);
         saveTasksToLocalStorage();
@@ -136,7 +136,10 @@ function saveTasksToLocalStorage() {
         if (taskText) {
             const text = taskText.textContent;
             const isCompleted = task.classList.contains('completed');
-            tasks.push({ text, completed: isCompleted });
+            tasks.push({
+                text,
+                completed: isCompleted
+            });
         }
     });
     localStorage.setItem('tasks', JSON.stringify(tasks));
