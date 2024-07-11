@@ -141,7 +141,7 @@ I chose these colours as they complement each other well and co-ordinate nicely 
 - <a href="https://github.com" target="_blank">Github</a>:
    - Github was used to host the code of the website.
 
-- <a href="www.pexels.com" target="_blank">Pexels</a>:
+- <a href="https://www.pexels.com" target="_blank">Pexels</a>:
    - Pexels was used for the background image.
 
 
