@@ -44,7 +44,7 @@ Friends and family have tested my website on different devices and browsers. The
 
 - Manual Testing using either JSLint or JSHint is a form of manual testing by the developer. The testing can be completed during the development process in order to catch any problems early, or it can be completed at the end of the development process, although this could take up further time. The testing through JSLint/JSHint is completed by copying the JavaScript code into the linter and receiving the results as to whether the code has passed through the testing process or if there are bugs and errors present.
 
-# Testing for Milestone 2
+## Testing for Milestone 2
 
 Although both Jest and JSLint/JSHint are essential for JavaScript development at different stages, in this project I have decided to run my tests through a linter, JSHint. 
 In a day-to-day development situation, I can fully acknowledge why Jest would be used, as it makes the development process much smoother running, and enables good time management with the testing process being carried out in the background automatically.
