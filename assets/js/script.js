@@ -1,9 +1,12 @@
+// Code to ensure that task list remains present upon the webpage being refreshed //
 document.addEventListener('DOMContentLoaded', loadTasksFromLocalStorage);
 
+// Code to state which elements to target //
 const todoForm = document.getElementById('todo-form');
 const todoInput = document.getElementById('todo-input');
 const todoList = document.getElementById('todo-list');
 
+// Code to action the "Add Task" button so that the input field is not left empty //
 todoForm.addEventListener('submit', function (event) {
     event.preventDefault();
     const newTask = todoInput.value.trim();
@@ -18,6 +21,7 @@ todoForm.addEventListener('submit', function (event) {
     saveTasksToLocalStorage();
 });
 
+// Code for adding a task //
 function addTask(task, completed = false) {
     const listItem = document.createElement('li');
     listItem.className = 'todo-item';
@@ -28,7 +32,8 @@ function addTask(task, completed = false) {
     const taskText = document.createElement('span');
     taskText.className = 'task-text';
     taskText.textContent = task;
-
+    
+    // Code to declare actions via buttons //
     const checkBox = createCheckbox(completed);
     const deleteButton = createDeleteButton();
     const editButton = createEditButton(listItem, taskText);
@@ -66,6 +71,7 @@ function addTask(task, completed = false) {
     saveTasksToLocalStorage();
 }
 
+// Code for checkbox //
 function createCheckbox(completed = false) {
     const checkBox = document.createElement('input');
     checkBox.setAttribute('type', 'checkbox');
@@ -73,6 +79,7 @@ function createCheckbox(completed = false) {
     return checkBox;
 }
 
+// Code for delete button //
 function createDeleteButton() {
     const deleteButton = document.createElement('button');
     deleteButton.className = 'delete-button';
@@ -80,6 +87,7 @@ function createDeleteButton() {
     return deleteButton;
 }
 
+// Code for edit button //
 function createEditButton(listItem, taskText) {
     const editButton = document.createElement('button');
     editButton.className = 'edit-button';
@@ -94,6 +102,7 @@ function createEditButton(listItem, taskText) {
     return editButton;
 }
 
+// Code for edit mode //
 function toggleTaskEditState(listItem, taskText, editButton) {
     const isEditing = listItem.classList.contains('editing');
     console.log(`Toggle edit state: ${isEditing}`);
@@ -129,6 +138,7 @@ function toggleTaskEditState(listItem, taskText, editButton) {
     saveTasksToLocalStorage();
 }
 
+// Code to save task list so it is still present upon webpage being refreshed //
 function saveTasksToLocalStorage() {
     const tasks = [];
     document.querySelectorAll('#todo-list li').forEach(task => {
