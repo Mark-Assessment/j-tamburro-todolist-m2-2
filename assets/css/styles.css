@@ -1,3 +1,4 @@
+/* Body styling */
 body {
     /* Background Image sourced from https://www.pexels.com */
     background-image: url('/todolist/assets/images/background-image.jpg');
@@ -10,7 +11,7 @@ body {
     font-family: "Alegreya Sans", sans-serif;
 }
 
-
+/* Container and card styling */
 .container {
     display: flex;
     justify-content: center;
@@ -32,17 +33,20 @@ body {
     margin-top: 20px;
 }
 
+/* Text styling */
 .text {
     text-align: center;
     font-family: "Alegreya Sans", sans-serif;
 }
 
+/*Header styling */
 h1 {
     margin-bottom: 20px;
     color: #5F9EA0;
     font-size: 40px;
 }
 
+/* Form styling */
 #todo-form {
     display: flex;
     flex-direction: column;
@@ -72,6 +76,7 @@ h1 {
     background-color: #0b5e60;
 }
 
+/* List styling */
 #todo-list {
     list-style: none;
     padding: 0;
@@ -95,6 +100,7 @@ h1 {
     width: 100%;
 }
 
+/* Task styling */
 .task-content {
     display: flex;
     align-items: center;
@@ -107,6 +113,7 @@ h1 {
     word-break: break-word;
 }
 
+/* Button styling */
 #todo-list button {
     background: none;
     border: none;
@@ -120,6 +127,7 @@ h1 {
     color: #000;
 }
 
+/* Icon styling */
 #todo-list i.fas.fa-trash {
     color: #5F9EA0;
 }
@@ -136,6 +144,7 @@ h1 {
     color: #0b5e60;
 }
 
+/* Responsive design styling */
 @media (min-width: 768px) {
     .container {
         justify-content: flex-end;
